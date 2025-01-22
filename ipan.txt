@@ -1,0 +1,189 @@
+MUHAMMAD ILFAN LATIHAN BELAJAR JAVA
+X.PPLG.1
+
+LATIHAN 1
+
+package com.belajar;
+
+public class ipan {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        int c = 25;
+        int d = 30;
+        System.out.println("Hasil a + b = " + (a + b));
+        System.out.println("Hasil a - b = " + (a - b));
+        System.out.println("Hasil a * c = " + (a * c));
+        System.out.println("Hasil d % b = " + (d % b));
+        System.out.println("Hasil b / c = " + (b / c));
+    }
+
+}
+
+
+LATIHAN 2
+(KALKULATOR)
+
+package com.belajar;
+import java.util.Scanner;
+
+public class KalkulatorLuas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int pilihan;
+
+        do {
+            System.out.println("===== Kalkulator Luas =====");
+            System.out.println("1. Luas Persegi");
+            System.out.println("2. Luas Persegi Panjang");
+            System.out.println("3. Luas Lingkaran");
+            System.out.println("4. Keluar");
+            System.out.print("Pilih menu (1-4): ");
+            pilihan = scanner.nextInt();
+
+            switch (pilihan) {
+                case 1:
+                    hitungLuasPersegi(scanner);
+                    break;
+                case 2:
+                    hitungLuasPersegiPanjang(scanner);
+                    break;
+                case 3:
+                    hitungLuasLingkaran(scanner);
+                    break;
+                case 4:
+                    System.out.println("Terima kasih telah menggunakan program ini!");
+                    break;
+                default:
+                    System.out.println("Pilihan tidak valid. Silakan coba lagi.");
+            }
+            System.out.println();
+        } while (pilihan != 4);
+
+        scanner.close();
+    }
+
+    public static void hitungLuasPersegi(Scanner scanner) {
+        System.out.print("Masukkan panjang sisi persegi: ");
+        double sisi = scanner.nextDouble();
+        double luas = sisi * sisi;
+        System.out.println("Luas persegi adalah: " + luas);
+    }
+
+    public static void hitungLuasPersegiPanjang(Scanner scanner) {
+        System.out.print("Masukkan panjang: ");
+        double panjang = scanner.nextDouble();
+        System.out.print("Masukkan lebar: ");
+        double lebar = scanner.nextDouble();
+        double luas = panjang * lebar;
+        System.out.println("Luas persegi panjang adalah: " + luas);
+    }
+
+    public static void hitungLuasLingkaran(Scanner scanner) {
+        System.out.print("Masukkan jari-jari lingkaran: ");
+        double jariJari = scanner.nextDouble();
+        double luas = Math.PI * jariJari * jariJari;
+        System.out.println("Luas lingkaran adalah: " + luas);
+    }
+}
+
+
+LATIHAN 3
+
+
+package com.belajar;
+
+public class latihan3 {
+    //MEnggunakan operator logika 
+    public static void main(String[] args) {
+        int A = 70;
+        int B = 80;
+        int C = 90;
+        boolean a = A > B && B < C || C < B;
+        boolean b = A < B || B < C && C < B;
+        System.out.println(a);
+        System.out.println(b);
+    }
+    
+}
+
+
+
+LATIHAN 4
+
+package com.belajar;
+import java.util.Scanner;
+public class latihan5 {
+    public static void main(String[] args) {
+        //mengelolah input data sederhana
+        //mengunakan class scanner
+        int AGIAH_NISN, Umua;
+        String Sia_namo, AGIAH_Alamat;
+        Scanner Input = new Scanner(System.in);
+        System.out.println("DATA SISWA");
+        System.out.println("----------");
+        System.out.print("MINTAK NISN : ");
+        AGIAH_NISN = Input.nextInt();
+        System.out.print("SIA Namo : ");
+        Sia_namo = Input.next() ;
+        System.out.print("BARA Umua : ");
+        Umua = Input.nextInt() ;
+        System.out.print("DIMA Alamat : ");
+        AGIAH_Alamat = Input.next() ;
+        //Menampilkan Data siswa
+        System.out.println( "KO HASILL EEHHH");
+        System.out.println( "---------------");
+        System.out.println( "|||||||||||||||");
+        System.out.println( "---------------");
+        System.out.println("IKOO NISN NYO NDK? : " + AGIAH_NISN);
+        System.out.println("IKO Namo SITU KAN? : " + Sia_namo);
+        System.out.println("DI SIKO Alamat KAN? : " + AGIAH_Alamat);
+        System.out.println("IYO SA GIKO Umua? : " + Umua );
+
+    }
+    
+}
+
+
+
+LATIHAN 5
+
+  package com.belajar;
+  public class Main {
+      public static void main(String[] args) {
+        System.out.println("ipan gantenggg papalepap pale pale");
+      }
+  }
+
+
+LATIHAN 6
+
+
+package com.belajar;
+
+import java.util.Scanner;
+
+public class puskesmas {
+    
+    public static void main(String[] args) {
+        //MENDATA PASIAN GADUIKKKSSS
+        int id_pasien;
+        String alamat, nama, keluhan; 
+        Scanner Input = new Scanner(System.in);
+        System.out.println("-----HA IKO HARUS MASUAK AN DATA KALIAN SADONYO-----");
+        System.out.println("   MASUAK AN DIHHHHHHHHHHHHHHHHH, MANGARATI STEK");
+        System.out.print("nama :" );
+        nama = Input.nextLine();
+        System.out.print("dima tingga? : ");
+        alamat = Input.nextLine();
+        System.out.print("Apo keluhannyo? : ");
+        keluhan = Input.nextLine();
+        System.out.print("apo id anda? : ");
+        id_pasien = Input.nextInt();
+        System.out.println("IKO HASILLNYOOOOO YOOOOO");
+        System.out.println("________________________");
+        System.out.println("iko namo : " + nama);
+        System.out.println("iko almat mu yo : " + alamat);
+        System.out.println("iko id mu yawww : " + id_pasien);
+        System.out.println("iko keluhannyo (semoga ndk kanai kangker) : " + keluhan);
+SEKIAN
